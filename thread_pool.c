@@ -28,6 +28,9 @@ int pool_thread_create (thread_pool_t * thread_pool,
   // Always create a thread as long as there are less then
   // core_pool_size threads created.
   if (thread_pool->size < thread_pool->core_pool_size) {
+      pthread_t *thread = (pthread_t *) malloc(sizeof(pthread_t));
+
+      pthread_create(thread, NULL, run, future);
   }
 
   return done;

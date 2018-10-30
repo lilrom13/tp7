@@ -29,7 +29,10 @@ future_t * submit_callable (executor_t * executor, callable_t * callable) {
   callable->executor = executor;
   future->callable  = callable;
   future->completed = 0;
-  return NULL;
+
+  pool_thread_create(executor->thread_pool, callable_run, (void *) future, 0);
+
+  return future;
 }
 
 // Get result from callable execution. Block if not available.
