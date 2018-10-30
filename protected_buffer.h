@@ -7,8 +7,13 @@
 
 // Protected buffer structure used for both implemantations.
 typedef struct {
-  long                sem_impl;
-  circular_buffer_t * buffer;
+    long                sem_impl;
+    circular_buffer_t * buffer;
+
+    // My implementation
+    pthread_mutex_t mutex;
+    pthread_cond_t cCv;
+    pthread_cond_t pCv;
 } protected_buffer_t;
 
 // Initialise the protected buffer structure above. sem_impl specifies

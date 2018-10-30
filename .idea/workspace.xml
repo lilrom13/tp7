@@ -12,17 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1cf5acf-2f67-4f3a-92af-15d185a97517" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/circular_buffer.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cond_protected_buffer.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/executor.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_executor.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected_buffer.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scenario.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sem_protected_buffer.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/thread_pool.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/main_executor" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/main_executor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cond_protected_buffer.c" beforeDir="false" afterPath="$PROJECT_DIR$/cond_protected_buffer.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected_buffer.h" beforeDir="false" afterPath="$PROJECT_DIR$/protected_buffer.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,8 +37,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Makefile" value="1" />
-          <entry key="c" value="2" />
+          <entry key="c" value="3" />
           <entry key="gitignore" value="1" />
+          <entry key="h" value="1" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -52,29 +47,24 @@
         <counts>
           <entry key="CMakeLists.txt" value="1" />
           <entry key="Makefile" value="1" />
-          <entry key="ObjectiveC" value="2" />
+          <entry key="ObjectiveC" value="4" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="25" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-20.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_executor.c">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,11 +74,35 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cond_protected_buffer.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1545">
+              <caret line="167" selection-start-line="167" selection-end-line="167" />
+              <folding>
+                <element signature="e#139#625#0" />
+                <element signature="e#1345#2052#0" />
+                <element signature="e#2054#2548#0" />
+                <element signature="e#2550#3162#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected_buffer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+            <state relative-caret-position="442">
+              <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -109,6 +123,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/cond_protected_buffer.c" />
+        <option value="$PROJECT_DIR$/protected_buffer.h" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -135,6 +151,11 @@
             <path>
               <item name="main_executor" type="b2602c69:ProjectViewProjectNode" />
               <item name="src_tp7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="main_executor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src_tp7" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -187,25 +208,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540908492704</updated>
-      <workItem from="1540908493880" duration="914000" />
+      <workItem from="1540908493880" duration="1295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="914000" />
+    <option name="totallyTimeSpent" value="1295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" weight="0.32891566" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -291,10 +312,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cond_protected_buffer.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1545">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+          <folding>
+            <element signature="e#139#625#0" />
+            <element signature="e#1345#2052#0" />
+            <element signature="e#2054#2548#0" />
+            <element signature="e#2550#3162#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected_buffer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="118" column="37" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
+        <state relative-caret-position="442">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
         </state>
       </provider>
     </entry>
